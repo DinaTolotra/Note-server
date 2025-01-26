@@ -1,0 +1,5 @@
+span.card.d-inline-block.m-1.note(style='max-width:250px', id=note.id)
+	div.card-header.fw-bold.d-flex.justify-content-between
+		a.card-title.note-label(href='/edit/'+note.id) #{note.label}
+	div.card-body
+		p.card-text.note-content #{note.content}

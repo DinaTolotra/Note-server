@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		include Module/viewport.pug
+		include Module/lib.pug
+		title Home
+	body
+		include Module/header.pug
+		a(href='/create') 
+			input.btn.btn-primary.m-4(type="button", value="New note")
+		div.container.d-flex.flex-wrap.justify-content-around#note-container 
+			- var noteList = noteList
+			- var addr = addr
+			- for (let note of noteList)
+				include Module/Home/note.pug

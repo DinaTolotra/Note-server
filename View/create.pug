@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        include Module/viewport.pug
+        include Module/lib.pug
+        title Edit
+    body
+        include Module/header.pug
+        form.container.m-5(action=addr, method="post")
+            - var note = {id: 0, label: 'Label', content: ''}
+            include Module/Edit/id.pug
+            include Module/Edit/label.pug
+            include Module/Edit/content.pug
+            input.btn.btn-primary(type="submit", value="Create")

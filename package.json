@@ -1,0 +1,14 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "author": "DinaTolotra",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "file:../../../../../../usr/local/lib/node_modules/express",
+    "pug": "file:../../../../../../usr/local/lib/node_modules/pug"
+  }
+}
